@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Mary's Blackfeet Heritage Park | Glacier View Glamping & RV</title>
+    <style>
+        /* Basic Reset and Variables */
+        :root {
+            --blackfeet-red: #8B0000;
+            --glacier-blue: #0A3D62;
+            --mountain-green: #38761D;
+            --text-light: #f5f5f5;
+            --text-dark: #333;
+        }
+        body { font-family: sans-serif; margin: 0; padding: 0; color: var(--text-dark); background-color: var(--text-light); }
+        .hero { 
+            background: url('montana-glacier-view-placeholder.jpg') no-repeat center center/cover; 
+            color: var(--text-light); 
+            height: 80vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            position: relative;
+        }
+        .hero::before { /* Dimming Overlay */
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.45);
+        }
+        .hero-content { z-index: 1; max-width: 800px; padding: 20px; }
+        .hero h1 { font-size: 3.5em; margin-bottom: 0.2em; border-bottom: 4px solid var(--blackfeet-red); display: inline-block; padding-bottom: 10px; }
+        .hero p { font-size: 1.5em; font-weight: 300; }
+
+        /* General Section Styling */
+        section { padding: 60px 5%; text-align: center; }
+        .bg-dark { background-color: var(--glacier-blue); color: var(--text-light); }
+        h2 { font-size: 2.2em; color: var(--blackfeet-red); margin-bottom: 30px; }
+        
+        /* Features Grid */
+        .features-grid { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; }
+        .feature-card { flex-basis: 30%; min-width: 250px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .feature-card h3 { color: var(--glacier-blue); }
+        
+        /* Accommodation Pricing Table */
+        .price-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .price-table th, .price-table td { border: 1px solid #ddd; padding: 15px; text-align: left; }
+        .price-table th { background-color: var(--mountain-green); color: var(--text-light); }
+        .price-table tr:nth-child(even) { background-color: #f0f0f0; }
+
+        /* Call to Action */
+        .cta-button { 
+            background-color: var(--blackfeet-red); 
+            color: var(--text-light); 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-size: 1.2em; 
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-button:hover { background-color: var(--glacier-blue); }
+        
+        footer { background-color: var(--text-dark); color: var(--text-light); padding: 40px 5%; font-size: 0.9em; }
+        
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .hero p { font-size: 1.2em; }
+            .feature-card { flex-basis: 100%; }
+            .price-table th, .price-table td { padding: 10px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>BLACKFEET HERITAGE & RV PARK</h1>
+            <p>Experience Glacier National Park from the Sacred Perspective of the Blackfeet Nation.</p>
+            <a href="#rates" class="cta-button">VIEW SITES & BOOK YOUR STAY</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>A Destination with Purpose</h2>
+        <p style="max-width: 900px; margin: 0 auto 40px;">Located on Blackfeet land overlooking St. Mary's Lake, our park is an investment in community—dedicated to sharing our rich culture, promoting local prosperity, and creating jobs for the Blackfeet Nation, ensuring an authentic and deeply meaningful experience for every visitor.</p>
+    </section>
+
+    <section class="bg-dark">
+        <h2>Your Glacier Basecamp & Cultural Hub</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>RV Sites & Glamping</h3>
+                <p>Full hookup RV sites, dedicated tent camping areas, and luxurious, furnished Teepee Glamping for a truly unique stay.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Native Workshops</h3>
+                <p>Daily classes on Blackfeet history, traditional crafts, gardening, and guided nature hikes led by local community members.</p>
+            </div>
+            <div class="feature-card">
+                <h3>The Lodge & Community</h3>
+                <p>A central gathering lodge with games, laundry, clean bathhouses, local food trucks, and a dedicated store for authentic Native American goods.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Trail & Off-Road Rentals</h3>
+                <p>Premium rental fleet of specialized off-road vehicles and trail-ready UTVs/ATVs for exploring the surrounding scenic trails.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rates">
+        <h2>Accommodation & Estimated Peak Season Rates</h2>
+        <p>Our rates reflect the highest quality amenities, prime location, and exclusive access to cultural educational programs.</p>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Accommodation Type</th>
+                    <th>Peak Season Daily Rate (Estimate)</th>
+                    <th>Value Proposition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>**RV Site (Full Hookup)**</td>
+                    <td>$85 - $115 USD</td>
+                    <td>50/30A power, Water, Sewer, High-speed Wi-Fi, Lodge Access, Prime Glacier View.</td>
+                </tr>
+                <tr>
+                    <td>**Luxury Glamping Tipi**</td>
+                    <td>$260 - $350 USD</td>
+                    <td>Furnished tent, bedding, electricity, dedicated bathhouse access.</td>
+                </tr>
+                <tr>
+                    <td>Standard Campsite (Tent)</td>
+                    <td>$45 - $65 USD</td>
+                    <td>Designated tent pad, communal fire pit, bathhouse access.</td>
+                </tr>
+                <tr>
+                    <td>*Optional: Workshop/Activity Fee*</td>
+                    <td>$25 - $50 USD (Per Person)</td>
+                    <td>Access to daily cultural workshops and guided hikes.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Blackfeet Heritage & RV Park. All rights reserved. </p>
+        <p>Owned and Operated by the Blackfeet Nation. For inquiries, please contact: info@blackfeetrvpark.com</p>
+    </footer>
+
+</body>
+</html>
